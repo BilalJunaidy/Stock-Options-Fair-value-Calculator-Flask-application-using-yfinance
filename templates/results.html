@@ -1,0 +1,21 @@
+<! DOCTYPE html>
+<html>
+<head>
+	{% block heading %}Results{% endblock %}
+</head>
+
+<body>
+	
+{% block body %} 
+<p>Historical Volatility is {{fair_value["historical_volatility"]}}</p>
+<p>Call price per option is {{fair_value["call_value"]}}</p>
+<p>The fair value of these options is {{fair_value["fair_value_option"]}}</p>
+
+
+{% endblock %}	
+	<p>Developed by <a href = "https://www.linkedin.com/in/bilaljunaidy/">Bilal Junaidy</a>, CPA</p>
+	
+</body>
+
+</html>
+
