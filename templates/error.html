@@ -1,15 +1,27 @@
-<! DOCTYPE html>
-<html>
-<head>
+{% extends "layout.html" %}
+
 	{% block heading %}Error{% endblock %}
-</head>
 
-<body>
-	
-	{% block body %} No data found, ticker may be delisted or does not exist. Please recheck your inputs again {% endblock %}	
-	<p>Developed by <a href = "https://www.linkedin.com/in/bilaljunaidy/">Bilal Junaidy</a>, CPA</p>
-	
-</body>
 
-</html>
+	{% block body %}
+	Message:
+	<br>
+	Hi, Thank you for using the stock options calculator. It appears as though no data was found for your particular inputs.
+	<br>
+	This could be due to the following reasons:
+	<br>
+	1. The ticker entered may be delisted
+	<br>
+	2. The ticker entered does not exist.
+	<br>
+	3. The dates entered are incorrect.
+	<br>
+	<br>
+	Please recheck your inputs again and submit the form.
+	<br>
+
+	<p><a href="{{url_for('calculator')}}">Click here</a> to access the stock options fair value calculator</p>
+	{% endblock %}
+
+
 

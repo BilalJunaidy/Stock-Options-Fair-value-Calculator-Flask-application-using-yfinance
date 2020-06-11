@@ -2,16 +2,16 @@
 
 {% block heading %}
 
-	<title>Stock options fair value calculator</title>	
+	<title>Stock options fair value calculator</title>
 
 {% endblock %}
 
 {% block body %}
 	<h3>Welcome to the online stock options fair value calculator</h3>
-	<p>This is an online calculator that helps calculate the fair value of stock options</p>
-	<p><a href="{{ url_for('methodology') }}">Click here</a> to learn about the methology used to determine the fair value in this calculator</p>
+	<p>This is an online calculator that helps calculate the fair value of stock options using the Black Scholes model as prescribed by IFRS 2 (Share based payments) and US-GAAP ASC 718 (Share-based compensation)</p>
+	<!--<p><a href="{{ url_for('methodology') }}">Click here</a> to learn about the methology used to determine the fair value in this calculator</p>-->
 	<p><a href="{{url_for('calculator')}}">Click here</a> to access the stock options fair value calculator</p>
 
-	
+
 
 {% endblock %}

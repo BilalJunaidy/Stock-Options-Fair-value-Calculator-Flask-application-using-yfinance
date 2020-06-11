@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+	{% block heading %}<title> How to use calculator </title>{% endblock %}
+
+
+	{% block body %}
+	Term:<br> Represent (in the number of years) the length of the remaining expected life of the option from the date of grant.
+	<br>
+	<br>
+	Strike price:<br> This is the strike/exercise price indicated in the option agreement.
+	<br>
+	<br>
+	Stock price:<br> This is the closing price of the underlying equity at the date of grant
+	<br>
+	<br>
+	Risk Free Rate:<br> This is the risk free rate based on public money market rates or other government debt rate.
+	Please make sure that the rate selected matches the term (See 'Term' above) of the option being valued.
+	<br>
+	<br>
+	Number of options:<br> This is the number of options issued that are being valued.
+	<br>
+	<br>
+	Dividend Yield Rate:<br> If the underlying equity doesn't pay dividends, then put in 0.00 in the calculator.
+	If the underlying equity does indeed pay dividends, then please add enter that in the calculator.
+	<br>
+	<br>
+	Ticker:<br> This is the symbol of the underlying equity being valued.
+	<br>
+	<br>
+	Grant date:<br> This is the date on which the options were issued to the option holder.
+	<br>
+	<br>
+	Look back date:<br> Since this calculator uses historical volatility as standard deviation of logarithmic returns, based on daily closing prices, it requires a look back date.
+	<br>
+	The look back date is essentially the grant date minus the Term of the option.
+	<br>
+	For example, for an option that was issued on June 1st 2020 and has a term of 5 years, then the
+	<br>
+	approximate look back date would be June 1st 2015.
+
+
+	<p><a href="{{url_for('calculator')}}">Click here</a> to access the stock options fair value calculator</p>
+	{% endblock %}
+
+
+

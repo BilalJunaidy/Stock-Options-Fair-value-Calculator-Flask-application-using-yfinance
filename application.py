@@ -17,6 +17,9 @@ def index():
 def methodology():
     return render_template("methodology.html")
 
+@app.route('/How_to_use_calculator')
+def howto():
+    return render_template("howto.html")
 
 @app.route('/calculator', methods = ["GET", "POST"])
 def calculator():
@@ -44,4 +47,4 @@ def calculator():
             return render_template("error.html")
         else:
             return render_template("results.html", fair_value = fair_value)
-            
+
